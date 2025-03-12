@@ -14,10 +14,9 @@
 </head>
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+    @include('partials/header')
     <h1>Laravel comics</h1>
-    @php
-
-    @endphp
+    @include('partials/footer')
 </body>
 
 </html>
