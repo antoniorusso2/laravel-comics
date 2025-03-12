@@ -3,6 +3,14 @@
     --bg-color: #f8f9fa;
 }
 
+.not-found {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    background-color: var(--bg-color);
+}
+
 /* reset rules */
 * {
     box-sizing: border-box;
