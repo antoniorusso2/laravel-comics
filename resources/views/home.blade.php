@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts/default')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{{-- homepage title --}}
+@section('title')
+Home
+@endsection
 
-    <title>Laravel</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+{{-- content --}}
+@section('content')
 
-</head>
+<section class="hero">
+    <div class="hero__container">
+        <h2 class="hero__title">Benvenuto alla homepage</h2>
+        <p class="hero__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, veritatis.</p>
+        <button class="hero__button">Vai alla lista</button>
+    </div>
+</section>
 
-<body class="font-sans antialiased dark:bg-black dark:text-white/50">
-    @include('partials/header')
-    <h1>Laravel comics</h1>
-    @include('partials/footer')
-</body>
-
-</html>
+@endsection
