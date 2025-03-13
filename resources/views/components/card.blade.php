@@ -1,9 +1,7 @@
-<div class="card" style="width: 12rem">
-    <img src="" class=" card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="card">
+    <img src="{{ $thumb }}" class="card-img-top object-fit-cover" alt="">
+    <div class="card-body ">
+        <h5 class="card-title">{{ $title }}</h5>
+        <p class="card-text text-truncate">{{ $description }}</p>
     </div>
 </div>
