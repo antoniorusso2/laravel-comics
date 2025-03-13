@@ -1,63 +1,34 @@
-/* colors vars */
 :root {
-    --bg-color: #f8f9fa;
+    --accent-color: #0c7cec;
+    --bg-color: #1c1c1c;
+    --text-color: #ffffff;
+    --gray: #716c69;
 }
 
-.not-found {
+.active {
+    color: var(--accent-color) !important;
+    position: relative;
+    opacity: 1;
+}
+
+.active::after {
+    content: "";
     display: block;
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    background-color: var(--bg-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: var(--accent-color);
+    animation: extend 0.25s forwards;
 }
 
-/* reset rules */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-ul,
-ol {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex-grow: 1;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background-color: var(--bg-color);
-    padding: 20px;
-    text-align: center;
-}
-.navlink-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* footer */
-footer {
-    background-color: var(--bg-color);
-    padding: 20px;
-    text-align: center;
+@keyframes extend {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
 }
