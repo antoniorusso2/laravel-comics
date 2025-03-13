@@ -20,7 +20,7 @@
                         <x-card>
                             <x-slot:thumb> {{ $comic['thumb'] }} </x-slot>
                             <x-slot:title>{{ $comic['title'] }}</x-slot>
-                            <x-slot:description>{{ $comic['description'] }}</x-slot>
+                            <x-slot:series>{{ $comic['series'] }}</x-slot>
                         </x-card>
                     </div>
                 @endforeach
