@@ -1,4 +1,4 @@
-<header>
+<header class="header my-4">
     <nav class="navbar navbar-expand-lg bg-body-primary container">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('home') }}">
@@ -10,15 +10,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item fs-4">
                         <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" aria-current="page"
                             href="{{ route('home') }}">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fs-4">
                         <a class="nav-link {{ request()->routeIs('comics') ? 'active' : '' }}"
                             href="{{ route('comics') }}">Comics</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fs-4">
                         <a class="nav-link {{ request()->routeIs('faq') ? 'active' : '' }}"
                             href="{{ route('faq') }}">F.A.Q.</a>
                     </li>
