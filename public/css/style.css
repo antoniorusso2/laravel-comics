@@ -17,8 +17,12 @@
 
 body {
     background-color: var(--bg-color);
+    height: 100vh;
     display: flex;
     flex-direction: column;
+}
+main {
+    flex-grow: 1;
 }
 
 .nav-link:hover {
@@ -55,6 +59,7 @@ body {
 .card-img-top {
     height: 220px;
     object-position: top;
+    border-radius: 0.2rem;
 }
 
 @keyframes extend {
